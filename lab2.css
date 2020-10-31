@@ -1,0 +1,39 @@
+h2 { 
+  font-family:cursive;
+  color: #6666ff;
+ 
+}
+
+.p1 {
+	
+font-family: Arial;
+font-size: 24px;
+color: #ff66ff;
+	
+}
+
+.p2 {
+	
+font-family: Arial;
+font-size: 24px;
+color: #009933;
+	
+}
+
+.p3 {
+	
+font-family: cursive;
+font-size: 24px;
+color: black;
+background-color:  #80d4ff;	
+display: block;
+margin:0 auto;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+}
