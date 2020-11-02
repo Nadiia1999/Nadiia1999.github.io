@@ -1,12 +1,12 @@
 h2 { 
   font-family:cursive;
   color: #6666ff;
- 
+  
 }
 
 .p1 {
 	
-font-family: Arial;
+font-family: Arial; 
 font-size: 24px;
 color: #ff66ff;
 	
@@ -25,15 +25,20 @@ color: #009933;
 font-family: cursive;
 font-size: 24px;
 color: black;
-background-color:  #80d4ff;	
-display: block;
-margin:0 auto;
-margin-top: 1%;
-margin-bottom: 1%;
+background-color:  #80d4ff;	/* фон кнопки*/
+display: block; /* Властивість display дозволяє змінити спосіб відображення певного елемента на сторінці. 
+                   Якщо в якості значення задати block - тоді це призведе до того, що будь-який елемент буде відображатися аналогічно тегу DIV .*/
+margin: auto; /* таким чином елемент розташується по центру*/
+margin-top: 1%; /* відступ зверху*/
+margin-bottom: 1%;/* відступ знизу*/
 }
 
-.center-img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 1%;
+
+.triangle-bottomright {
+	
+	width: 0;
+	height: 20px;
+	border-bottom: 100px solid red; /* висота трикутника*/
+	border-left: 100px solid transparent; /* ширина трикутника в ліву сторону*/
+	margin: auto;
 }
