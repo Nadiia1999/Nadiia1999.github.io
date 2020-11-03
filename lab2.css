@@ -38,7 +38,7 @@ margin-bottom: 1%;/* відступ знизу*/
 	
 	width: 0;
 	height: 20px;
-	border-bottom: 100px solid red; /* висота трикутника*/
-	border-left: 100px solid transparent; /* ширина трикутника в ліву сторону*/
+	border-bottom: 100px solid red; /* Властивість дозволяє одночасно встановити товщину, стиль і колір кордону внизу елемента.*/
+	border-left: 100px solid transparent; /* Властивість border-left дозволяє одночасно встановити товщину, стиль і колір лівої межі елемента. */
 	margin: auto;
 }
