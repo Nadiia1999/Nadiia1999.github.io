@@ -1,7 +1,7 @@
 function calculate()
 { var a, b, c;
-a=frmCalc.a.value; a=a.replace(',',','); a=Number(a);
-b=frmCalc.b.value; b=b.replace(',',','); b=Number(b);
+a=frmCalc.a.value; a=Number(a); /*Об'єкт Number у JavaScript — це об'єкт-обгортка, що дозволяє працювати з числовими значеннями.*/
+b=frmCalc.b.value; b=Number(b);
 if (a<=0) 
 	alert("Гіпотенуза не може бути меншою за нуль або дорівнювати 0.");
 if (b<=0) 
