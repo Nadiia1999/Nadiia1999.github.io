@@ -7,16 +7,16 @@ angular.module('myFirstApp',[])
 
 function myFirstController($scope){
  $scope.words="";
-$scope.Productlist="";
+ $scope.Productlist="";
 
  $scope.breakfast= function(){
  $scope.words=probil($scope.Productlist);
  };
  
  function probil(products1){
-	 let products=products1.split(',');
+	 var products=products1.split(',');
 	 
-	 for(let i=products.length - 1; i>=0; i--){
+	 for(var i=products.length - 1; i>=0; i--){
 		 if (products[i]==="") products.splice(i, 1);
 	 }
 	 if (products.length===0){
