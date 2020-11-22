@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="laboratorna_3.js"></script>
+<title>Калькулятор сніданку</title>
+</head>
+
+<body>
+<h1>Калькулятор сніданку</h1>
+ <div ng-controller="myFirstController">
+ Введіть список продуктів:<input type="text" ng-model="Productlist">
+ <button   ng-click="breakfast()" style="background-color:  #80d4ff">Чи не забагато?</button>
+  {{words}} 
+ </div>
+</body>
+</html>
