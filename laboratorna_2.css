@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;/*Значення width / height задають висоту / ширину всього елемента.*/
+}
+.n {
+    width: 100%;
+    height: 100%;
+	border:solid;/*кордон буде намальований суцільною лінією*/
+    position: relative;
+    background-color: #8D8D8D;/*колір об'єкта*/
+}
+.n2 {
+ 
+    width: 100%;
+    height: 100%;
+	border:solid;
+    position: relative;
+    background-color: #8D8D8D;
+}
+.n3 {
+  
+    width: 100%;
+    height: 100%;
+	border:solid;
+    position: relative;
+    background-color: #8D8D8D;
+}
+.m{
+	top: 0px;/* Положення елемента*/
+    right: 0px;/* Положення елемента*/
+	background-color: #ff8080;
+    position: absolute;
+    border-bottom:solid;/*Властивість дозволяє одночасно встановити товщину, стиль і колір кордону внизу елемента.*/
+    border-left:solid;/*Встановлює стиль кордону ліворуч від елемента.*/
+    width: 40%;
+    height: 25%;
+}
+.m2{
+	top: 0px;
+    right: 0px;
+	background-color: red;
+    position: absolute;
+    border-bottom:solid;
+    border-left:solid;
+    width: 40%;
+    height: 25%;
+}
+.m3{
+	top: 0px;
+    right: 0px;
+	background-color: yellow;
+    position: absolute;
+    border-bottom:solid;
+    border-left:solid;
+    width: 40%;
+    height: 25%;
+}
+.name_menu{
+	text-align: center;
+	font-weight:bold;
+}
+
+@media (min-width:992px ) {
+	
+	.n {
+    margin-top: 20px;/*Встановлює величину відступу від верхнього краю елемента.*/
+    height: 30%;
+	width: 30%;
+	display:inline-block;/*Це значення створює блоковий елемент, який поводить себе подібно рядковому елементу. 
+	                      Його внутрішня частина форматується як у блокового елемента, а сам елемент - як рядковий.*/
+	margin:15px;/*верхній відступ*/
+}
+	.n2 {
+    margin-top: 20px;
+    height: 30%;
+	width: 30%;
+	display:inline-block;
+	margin:15px;
+}
+    .n3 {
+    margin-top: 20px;
+    height: 30%;
+	width: 30%;
+	display:inline-block;
+	margin:15px;
+}
+
+.m{
+    height: 25%;
+}
+
+.m2{
+    height: 25%;
+}
+
+.m3{
+    height: 25%;
+}
+
+.text{
+	padding-top:10%;
+}
+ }
+
+@media(max-width:991px) {
+
+    .n {
+    margin-top: 20px;
+    height: 35%;
+	width: 35%;
+	display:inline-block;
+	margin:15px;
+}
+	.n2 {
+    margin-top: 20px;
+    height: 35%;
+	width: 35%;
+	display:inline-block;
+	margin:15px;
+
+}
+    .n3 {
+    margin: 10px;
+	margin-top: 20px;
+    height: 30%;
+	width: 75%;
+
+}
+.m{
+    height: 25%;
+}
+
+.m2{
+    height: 25%;
+}
+
+.m3{
+    height: 25%;
+}
+
+.text{
+	padding-top:10%;
+}
+}
+
+ @media (max-width:767px ) {
+
+.n {
+	margin-top: 20px;	
+    height: 50%;
+	width: 50%;
+	
+}
+.n2 {
+    margin-top: 20px;
+    height: 50%;
+	width: 50%;
+	
+}
+.n3 { 
+	margin-top: 20px;
+    height: 50%;
+	width: 50%;
+}
+.m{
+	
+    height: 20%;
+}
+.m2{
+    height: 20%;
+}
+.m3{
+    height: 20%;
+}
+.text{
+	padding-top:10%;/*Встановлює значення поля від верхнього краю вмісту елемента.*/
+}
+} 
+
+
