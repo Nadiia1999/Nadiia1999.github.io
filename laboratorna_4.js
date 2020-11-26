@@ -89,8 +89,9 @@ service.removeItem= function(itemIndex){
 };
 
 service.copyItem= function(itemIndex){
-    items1 =items.toString();
+    items1 =items.concat(itemIndex, 1);
 };
+
 
 }	
 })();	
