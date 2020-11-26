@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListApp'>
+<head>
+<meta charset="utf-8">
+<script  src="angular.min.js"></script>
+<script  src="laboratorna_4.js"></script>
+<title>Список покупок</title>
+</head>
+
+<body>
+
+<h1 style="font-family:cursive">Список покупок</h1>
+<h3 style="color:red; font-family:cursive">Купити:</h3>
+
+<div ng-controller='ShoppingListAddController as itemAdder'>
+ 
+ <input type="text" ng-model="itemAdder.itemName" placeholder="назва">
+ <input type="text" ng-model="itemAdder.itemQuantity" placeholder="кількість">
+ <button ng-click="itemAdder.addItem();">Купити</button>
+</div>
+
+<div ng-controller='ShoppingListShowController as showList'>
+<ol>
+  <li ng-repeat="item in showList.items">
+  {{ item.quantity}} of {{ item.name}}
+  <button ng-click="showList.removeItem($index)">Куплено</button>
+  </li>
+ </ol>
+ 
+</div>
+
+<h3 style="color:green; font-family:cursive">Куплено:</h3>
+
+<div ng-controller='ShoppingListShowController1 as showList1'>
+<ol>
+  <li ng-repeat="item in showList1.items1">
+  {{ item1.quantity}} of {{ item1.name}}
+  </li>
+ </ol>
+ 
+</div>
+
+</body>
+</html>
