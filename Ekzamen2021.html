@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListApp'>
+<head>
+<meta charset="utf-8">
+<script  src="angular.min.js"></script>
+<script  src="Ekzamen2021.js"></script>
+<title>Каталог</title>
+</head>
+
+<body>
+
+<h1 style="font-family:cursive">Каталог автомобілів</h1>
+
+
+<div ng-controller='ShoppingListShowController as showList'>
+<ol>
+  <li ng-repeat="item in showList.items">
+  {{ item.quantity}} of {{ item.mark}}
+  <button ng-click="showList.removeItem($index)">Видалити</button>
+  <button ng-click="showList.removeItem($index)">Приховати</button>
+  </li>
+ </ol>
+ 
+</div>
+
+</body>
+</html>
